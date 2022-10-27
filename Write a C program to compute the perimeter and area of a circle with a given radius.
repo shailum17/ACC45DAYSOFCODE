@@ -1,0 +1,14 @@
+#include<stdio.h>
+#define pi 3.14
+int main()
+{
+    float area , perimeter , radius ;
+    printf("Enter the radius : ");
+    scanf("%f",&radius);
+    {
+    area=pi*radius*radius;
+    printf("\n Area of rectangle : %.4f cm2",area);
+    }
+    perimeter=2*pi*radius;
+    printf("\n Perimeter of rectangle : %.4f cm",perimeter);
+}
