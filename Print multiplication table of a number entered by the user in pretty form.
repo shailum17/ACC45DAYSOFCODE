@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+    int num,i,tab;
+
+    printf("\nEnter a number : " );
+    scanf("%d",&num);
+    printf("Table of %d is : \n ",num);
+    for(i=0;i<10;i++)
+    
+    {
+        tab=i*num;
+        printf("\n %d*%d=%2d\n",num,i,tab);
+    }
+    
+}
