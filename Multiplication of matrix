@@ -1,0 +1,40 @@
+#include <stdio.h>
+#define MAX 100
+int main() 
+{
+int i,j,k,m,n,l,a[MAX][MAX],b[MAX][MAX],c[MAX][MAX];
+printf("\nEnter The values of m and n (row and Cloumn) for first Matrix:");
+scanf("%d %d",&m,&n);
+for(i=0;i<m;i++)
+{
+for(j=0;j<n;j++)
+{
+printf("\nEnter First Matrix value a[%d][%d]: ",i,j);
+scanf("%d",&a[i][j]);
+}
+printf("\nEnter The values of l (Cloumn) for Second Matrix:");
+scanf("%d %d",&l)
+for(i=0;i<n;i++)
+{
+for(j=0;j<l;j++)
+{
+printf("\nEnter Second Matrix value b[%d][%d]: ",i,j);
+scanf("%d",&b[i][j]);
+}
+  for(i=0; i < m; i++) {
+     for(j=0; j < l; j++) {
+         c[i][j] = 0;
+         for(k=0; k < n; k++) {
+            c[i][j] = c[i][j] + a[i][k] * b[k][j];
+         }
+     }
+  } 
+printf("\nThe Matrix value of c after multiplication: \n");
+for(i=0;i<m;i++)
+{
+for(j=0;j<l;j++)
+{
+printf("%d ",c[i][j]);
+}
+  return 0;
+}
